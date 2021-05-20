@@ -7,3 +7,7 @@ foreach (config('route.route_mapper') as $module => $prefix) {
         routeRule();
     })->prefix($module . '.');
 }
+
+Route::group(function () {
+    Route::get('[:segment]', 'Index/index');
+})->prefix('web.');

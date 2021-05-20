@@ -1,6 +1,6 @@
 {layout name="console/layout" /}
 
-<div class="layui-container">
+<div class="layui-container" style="margin-top: 320px;">
     <div class="layui-row">
         <a href="{:url('/')}">logo</a>
     </div>

@@ -43,6 +43,5 @@ return [
     'route_mapper' => [
         'api' => 'api',
         'console' => ADMIN_PATH,
-        'web' => '',
     ],
 ];

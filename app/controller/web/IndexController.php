@@ -2,6 +2,8 @@
 
 namespace app\controller\web;
 
+use app\service\ViewService;
+use think\Request;
 use think\response\View;
 
 /**
@@ -11,10 +13,14 @@ use think\response\View;
 class IndexController extends BaseController
 {
     /**
+     * @param \think\Request $request
+     * @param \app\service\ViewService $viewService
      * @return \think\response\View
      */
-    public function index(): View
+    public function index(Request $request, ViewService $viewService): View
     {
-        return $this->display('index');
+        $result = $viewService->render($request->pathinfo());
+
+        return $this->display($result['template'], $result);
     }
 }
