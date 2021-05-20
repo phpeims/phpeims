@@ -1,5 +1,7 @@
-/.idea
-/.vscode
+/node_modules
+/public/storage
 /vendor
-*.log
 .env
+.env.backup
+*.lock
+*.log

@@ -1,48 +1,42 @@
 {
-    "name": "topthink/think",
-    "description": "the new thinkphp framework",
+    "name": "phpeims/phpeims",
     "type": "project",
+    "description": "A modern enterprise information management system",
     "keywords": [
-        "framework",
-        "thinkphp",
-        "ORM"
+        "phpeims",
+        "php",
+        "cms"
     ],
-    "homepage": "http://thinkphp.cn/",
+    "homepage": "https://github.com/phpeims/phpeims",
     "license": "Apache-2.0",
-    "authors": [
-        {
-            "name": "liu21st",
-            "email": "liu21st@gmail.com"
-        },
-        {
-            "name": "yunwuxin",
-            "email": "448901948@qq.com"
-        }        
-    ],
     "require": {
-        "php": ">=7.1.0",
-        "topthink/framework": "^6.0.0",
-        "topthink/think-orm": "^2.0"
+        "php": "^8.0",
+        "topthink/framework": "^6.0",
+        "topthink/think-captcha": "^3.0",
+        "topthink/think-image": "^1.0",
+        "topthink/think-migration": "^3.0",
+        "topthink/think-orm": "^2.0",
+        "topthink/think-view": "^1.0"
     },
     "require-dev": {
-        "symfony/var-dumper": "^4.2",
-        "topthink/think-trace":"^1.0"
+        "symfony/var-dumper": "^4.4"
     },
     "autoload": {
         "psr-4": {
-            "app\\": "app"
-        },
-        "psr-0": {
-            "": "extend/"
+            "app\\": "app/"
         }
-    },
-    "config": {
-        "preferred-install": "dist"
     },
     "scripts": {
         "post-autoload-dump": [
-            "@php think service:discover",
-            "@php think vendor:publish"
+            "@php artisan service:discover",
+            "@php artisan vendor:publish"
         ]
-    }
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
