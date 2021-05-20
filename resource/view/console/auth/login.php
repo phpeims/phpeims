@@ -16,6 +16,9 @@
 <body>
 <div class="layui-container">
     <div class="layui-row">
+        <a href="{:url('/')}">logo</a>
+    </div>
+    <div class="layui-row">
         <div class="layui-col-md6">
             &nbsp;
         </div>
