@@ -2,7 +2,7 @@
 
 return [
     // 默认使用的数据库连接配置
-    'default' => env('DB_CONNECTION', 'mysql'),
+    'default' => env('DB_CONNECTION', 'sqlite'),
 
     // 自定义时间查询规则
     'time_query_rule' => [],
@@ -50,9 +50,15 @@ return [
             // 是否需要断线重连
             'break_reconnect' => false,
             // 监听SQL
-            'trigger_sql' => env('APP_DEBUG', true),
+            'trigger_sql' => env('APP_DEBUG', false),
             // 开启字段缓存
             'fields_cache' => false,
+        ],
+        'sqlite' => [
+            // 数据库类型
+            'type' => 'sqlite',
+            // 数据库
+            'database' => app()->getRootPath() . 'database/phpeims.db',
         ],
 
         // 更多的数据库配置信息

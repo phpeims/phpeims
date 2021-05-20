@@ -21,7 +21,7 @@ class ViewService
         }
 
         // DB SELECT
-        $data = [];
+        $data = Db::name('posts')->where('segment', $pathInfo)->findOrEmpty();
 
         if (empty($data)) {
             return ['template' => 'error'];

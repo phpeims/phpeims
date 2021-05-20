@@ -9,7 +9,7 @@ use think\facade\Route;
  */
 function asset($url): string
 {
-    return request()->root(true) . '/' . ltrim($url, '/') . '?v=' . APP_RELEASE;
+    return request()->root(true) . '/' . ltrim($url, '/') . '?v=' . RELEASE;
 }
 
 /**
