@@ -42,6 +42,6 @@ return [
     // 路由映射
     'route_mapper' => [
         'api' => 'api',
-        'console' => ADMIN_PATH,
+        'console' => env('ADMIN_PATH', 'admin'),
     ],
 ];
