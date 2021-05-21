@@ -20,9 +20,9 @@ class RuleService
     {
         $collection = AuthRule::where('status', $status)
             ->where('menu', $menu)
-            ->orderBy('sort', 'asc')
-            ->orderBy('id', 'asc')
-            ->get();
+            ->order('sort', 'asc')
+            ->order('id', 'asc')
+            ->selectOrFail();
 
         $data = collect($collection)->toArray();
 
