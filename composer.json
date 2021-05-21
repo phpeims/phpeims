@@ -36,6 +36,9 @@
         "post-autoload-dump": [
             "@php artisan service:discover",
             "@php artisan vendor:publish"
+        ],
+        "post-root-package-install": [
+            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
         ]
     },
     "config": {
