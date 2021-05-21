@@ -2,7 +2,10 @@
 <html lang="zh-Hans">
 <head>
     <meta charset="utf-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Welcome</title>
+    <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sentsin/layui@v2.6.7/dist/css/layui.css">
     <link rel="stylesheet" href="{:skin('css/app.css')}">
     <script src="https://cdn.jsdelivr.net/gh/sentsin/layui@v2.6.7/dist/layui.js"></script>

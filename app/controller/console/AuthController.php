@@ -47,4 +47,40 @@ class AuthController extends Controller
     {
         return $this->succeed('admin login');
     }
+
+    /**
+     * @param \think\Request $request
+     * @return \think\response\View
+     */
+    public function forgot(Request $request): View
+    {
+        return view('forgot');
+    }
+
+    /**
+     * @param \think\Request $request
+     * @return \think\response\Json
+     */
+    public function forgotHandler(Request $request): Json
+    {
+        return $this->succeed('admin forgot');
+    }
+
+    /**
+     * @param \think\Request $request
+     * @return \think\response\View
+     */
+    public function reset(Request $request): View
+    {
+        return view('reset');
+    }
+
+    /**
+     * @param \think\Request $request
+     * @return \think\response\Json
+     */
+    public function resetHandler(Request $request): Json
+    {
+        return $this->succeed('admin reset');
+    }
 }
