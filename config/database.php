@@ -23,7 +23,7 @@ return [
             // 服务器地址
             'hostname' => env('DB_HOST', '127.0.0.1'),
             // 数据库名
-            'database' => env('DB_DATABASE', ''),
+            'database' => env('DB_DATABASE', 'phpeims'),
             // 用户名
             'username' => env('DB_USERNAME', 'root'),
             // 密码
@@ -36,7 +36,6 @@ return [
             'charset' => env('DB_CHARSET', 'utf8mb4'),
             // 数据库表前缀
             'prefix' => env('DB_PREFIX', ''),
-
             // 数据库部署方式:0 集中式(单一服务器),1 分布式(主从服务器)
             'deploy' => 0,
             // 数据库读写是否分离 主从式有效

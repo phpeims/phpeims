@@ -19,4 +19,12 @@ class User extends Model
      * @var string
      */
     protected $pk = 'id';
+
+    /**
+     * @return \think\model\relation\BelongsToMany
+     */
+    public function roles()
+    {
+        return $this->belongsToMany(AuthGroup::class, AuthGroupAccess::class);
+    }
 }

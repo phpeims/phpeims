@@ -9,5 +9,5 @@ foreach (config('route.mapper') as $module => $prefix) {
 }
 
 Route::group(function () {
-    Route::get('[:segment]', 'Index/index');
+    Route::get('[:path]', 'Index/index');
 })->prefix('web.');

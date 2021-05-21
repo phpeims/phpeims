@@ -7,8 +7,14 @@
         "php",
         "cms"
     ],
-    "homepage": "https://github.com/phpeims/phpeims",
     "license": "Apache-2.0",
+    "homepage": "https://www.phpeims.com/",
+    "support": {
+        "issues": "https://github.com/phpeims/phpeims/issues?state=open",
+        "forum": "https://www.phpeims.com/forum/",
+        "wiki": "https://www.phpeims.com/wiki/",
+        "source": "https://github.com/phpeims/phpeims"
+    },
     "require": {
         "php": "^8.0",
         "topthink/framework": "^6.0",
