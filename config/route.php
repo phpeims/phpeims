@@ -40,7 +40,7 @@ return [
     // 默认JSONP处理方法
     'var_jsonp_handler' => 'callback',
     // 路由映射
-    'route_mapper' => [
+    'mapper' => [
         'api' => 'api',
         'console' => env('ADMIN_PATH', 'admin'),
     ],
