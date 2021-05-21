@@ -2,8 +2,6 @@
 
 namespace app\controller\console;
 
-
-
 /**
  * Class NavController
  * @package app\controller\console
@@ -33,7 +31,7 @@ class NavController extends BaseController
      * 保存
      * @postMapping
      */
-    public function store()
+    public function storeHandler()
     {
 
     }
@@ -59,7 +57,7 @@ class NavController extends BaseController
      * 更新
      * @postMapping
      */
-    public function update()
+    public function updateHandler()
     {
 
     }
@@ -68,69 +66,7 @@ class NavController extends BaseController
      * 删除
      * @postMapping
      */
-    public function destroy()
-    {
-
-    }
-
-    /**
-     * 友情链接
-     * @return \think\response\View
-     */
-    public function link(): View
-    {
-        return view('nav/link/index');
-    }
-
-    /**
-     * 创建
-     * @return \think\response\View
-     */
-    public function linkCreate(): View
-    {
-        return view('nav/link/form');
-    }
-
-    /**
-     * 保存
-     * @postMapping
-     */
-    public function linkStore()
-    {
-
-    }
-
-    /**
-     * 显示
-     */
-    public function linkShow()
-    {
-
-    }
-
-    /**
-     * 编辑
-     * @return \think\response\View
-     */
-    public function linkEdit(): View
-    {
-        return view('nav/link/form');
-    }
-
-    /**
-     * 更新
-     * @postMapping
-     */
-    public function linkUpdate()
-    {
-
-    }
-
-    /**
-     * 删除
-     * @postMapping
-     */
-    public function linkDestroy()
+    public function destroyHandler()
     {
 
     }

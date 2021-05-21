@@ -3,19 +3,18 @@
 namespace app\controller\console;
 
 /**
- * Class UserController
+ * Class LinkController
  * @package app\controller\console
  */
-class UserController extends BaseController
+class LinkController extends BaseController
 {
     /**
-     * 用户管理
-     * @getMapping(parent_id=4, menu=1)
+     * 友情链接
      * @return \think\response\View
      */
     public function index(): View
     {
-        return view('user/index');
+        return view('nav/link/index');
     }
 
     /**
@@ -24,7 +23,7 @@ class UserController extends BaseController
      */
     public function create(): View
     {
-        return view('user/form');
+        return view('nav/link/form');
     }
 
     /**
@@ -50,7 +49,7 @@ class UserController extends BaseController
      */
     public function edit(): View
     {
-        return view('user/form');
+        return view('nav/link/form');
     }
 
     /**
@@ -69,23 +68,5 @@ class UserController extends BaseController
     public function destroyHandler()
     {
 
-    }
-
-    /**
-     * 个人资料
-     * @return \think\response\View
-     */
-    public function profile(): View
-    {
-        return view('user/profile');
-    }
-
-    /**
-     * 修改密码
-     * @return \think\response\View
-     */
-    public function password(): View
-    {
-        return view('user/password');
     }
 }

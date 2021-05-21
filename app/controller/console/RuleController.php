@@ -4,7 +4,6 @@ namespace app\controller\console;
 
 use app\model\AuthRule;
 
-
 /**
  * Class RuleController
  * @package app\controller\console
@@ -36,7 +35,7 @@ class RuleController extends BaseController
      * 保存
      * @postMapping
      */
-    public function store()
+    public function storeHandler()
     {
 
     }
@@ -62,7 +61,7 @@ class RuleController extends BaseController
      * 更新
      * @postMapping
      */
-    public function update()
+    public function updateHandler()
     {
 
     }
@@ -71,7 +70,7 @@ class RuleController extends BaseController
      * 删除
      * @postMapping
      */
-    public function destroy()
+    public function destroyHandler()
     {
 
     }

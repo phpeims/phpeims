@@ -2,8 +2,6 @@
 
 namespace app\controller\console;
 
-
-
 /**
  * Class SystemController
  * @package app\controller\console

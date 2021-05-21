@@ -3,32 +3,32 @@
 namespace app\controller\console;
 
 /**
- * Class UserController
+ * Class AdPositionController
  * @package app\controller\console
  */
-class UserController extends BaseController
+class AdPositionController extends BaseController
 {
     /**
-     * 用户管理
-     * @getMapping(parent_id=4, menu=1)
+     * 广告位管理
+     * @getMapping(parent_id=3, menu=1)
      * @return \think\response\View
      */
     public function index(): View
     {
-        return view('user/index');
+        return view('index');
     }
 
     /**
-     * 创建
+     * 创建广告位
      * @return \think\response\View
      */
     public function create(): View
     {
-        return view('user/form');
+        return view('create');
     }
 
     /**
-     * 保存
+     * 保存广告位
      * @postMapping
      */
     public function storeHandler()
@@ -37,7 +37,7 @@ class UserController extends BaseController
     }
 
     /**
-     * 显示
+     * 显示广告位
      */
     public function show()
     {
@@ -45,16 +45,16 @@ class UserController extends BaseController
     }
 
     /**
-     * 编辑
+     * 编辑广告位
      * @return \think\response\View
      */
     public function edit(): View
     {
-        return view('user/form');
+        return view('create');
     }
 
     /**
-     * 更新
+     * 更新广告位
      * @postMapping
      */
     public function updateHandler()
@@ -63,29 +63,11 @@ class UserController extends BaseController
     }
 
     /**
-     * 删除
+     * 删除广告位
      * @postMapping
      */
     public function destroyHandler()
     {
 
-    }
-
-    /**
-     * 个人资料
-     * @return \think\response\View
-     */
-    public function profile(): View
-    {
-        return view('user/profile');
-    }
-
-    /**
-     * 修改密码
-     * @return \think\response\View
-     */
-    public function password(): View
-    {
-        return view('user/password');
     }
 }

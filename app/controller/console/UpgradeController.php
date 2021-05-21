@@ -2,8 +2,6 @@
 
 namespace app\controller\console;
 
-
-
 /**
  * Class UpgradeController
  * @package app\controller\console

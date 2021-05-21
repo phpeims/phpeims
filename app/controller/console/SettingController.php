@@ -2,8 +2,6 @@
 
 namespace app\controller\console;
 
-
-
 /**
  * Class SettingController
  * @package app\controller\console

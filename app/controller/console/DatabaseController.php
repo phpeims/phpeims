@@ -2,8 +2,6 @@
 
 namespace app\controller\console;
 
-
-
 /**
  * Class DatabaseController
  * @package app\controller\console
@@ -33,7 +31,7 @@ class DatabaseController extends BaseController
      * 保存
      * @postMapping
      */
-    public function store()
+    public function storeHandler()
     {
 
     }
@@ -59,7 +57,7 @@ class DatabaseController extends BaseController
      * 更新
      * @postMapping
      */
-    public function update()
+    public function updateHandler()
     {
 
     }
@@ -68,7 +66,7 @@ class DatabaseController extends BaseController
      * 删除
      * @postMapping
      */
-    public function destroy()
+    public function destroyHandler()
     {
 
     }
